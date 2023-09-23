@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "444563286894",
+    "project_id": "pentakill-93c3e",
+    "storage_bucket": "pentakill-93c3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444563286894:android:524266033addeccc3e6f7f",
+        "android_client_info": {
+          "package_name": "com.example.penta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444563286894-hi7l95ps2td9e2b6ki239uu9cqfkqpov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYK-6zM2zCdUTcsW3EvZLYuPN_697YYmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444563286894-hi7l95ps2td9e2b6ki239uu9cqfkqpov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#514C4C"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="체질량지수(BMI)계산기"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/BMIPage"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sec"
+        android:background="#50b4b4b4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+            android:id="@+id/tv1"
+            android:textSize="23dp"
+            android:text="비만도 측정 결과" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="신체질량지수(BMI)와 비만도를 측정결과입니다."
+            android:textSize="14dp" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            android:id="@+id/BMIresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI 지수 0(저체중)"
+            android:textSize="24dp"
+            android:paddingTop="20dp"
+            />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/BMIresult"
+            android:id="@+id/BMIresult2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저체중"
+            android:textSize="24dp"
+            android:paddingTop="20dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/BMIProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#514C4C"
+            android:max="30"
+            android:progress="10"
+            android:progressTint="#2196F3"
+            android:scaleY="4"
+            app:layout_constraintLeft_toLeftOf="@+id/BMIresult2"
+            app:layout_constraintTop_toBottomOf="@+id/BMIresult2" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/BMIProgressBar"
+            android:paddingTop="30dp"
+            android:textSize="20dp"
+            android:text="기존정보" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="18dp"
+            android:text="성별" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv4"
+            android:id="@+id/profilesex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:text="남자" />
+        <TextView
+            android:id="@+id/tv5"
+            app:layout_constraintTop_toBottomOf="@+id/profilesex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:textSize="18dp"
+            android:text="생년월일" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv5"
+            android:id="@+id/profilebirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:text="1111/11/11" />
+        <TextView
+            android:id="@+id/tv6"
+            app:layout_constraintTop_toBottomOf="@+id/profilebirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:textSize="18dp"
+            android:text="키" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv6"
+            android:id="@+id/profilehieght"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:text="000cm" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/profilehieght"
+            android:id="@+id/tv7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:textSize="18dp"
+            android:text="몸무게" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv7"
+            android:id="@+id/profileweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="16dp"
+            android:text="000kg" />
+        <Button
+            app:layout_constraintTop_toBottomOf="@+id/profileweight"
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="기존 정보 수정하기" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

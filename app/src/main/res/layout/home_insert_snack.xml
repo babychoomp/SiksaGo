@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#514C4C"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="간식"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tvMeal"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="간식 식단 정보를 입력해주세요"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/korean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="이름"
+        android:textSize="24dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/grams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="무게"
+        android:textSize="24dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="칼로리"
+        android:textSize="24dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/carbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="탄수화물"
+        android:textSize="24dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/proteins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="단백질"
+        android:textSize="24dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/fats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="지방"
+        android:textSize="24dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="정보 입력"
+        android:textSize="24dp" />
+
+</LinearLayout>

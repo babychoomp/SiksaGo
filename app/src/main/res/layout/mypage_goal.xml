@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#50b4b4b4"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#514C4C"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="목표 설정"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/goalpage"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/goal_input"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="30dp"
+            android:text="현재 나의 목표 입력"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goal_input2"
+
+            android:layout_margin="10dp"
+            android:text="자신의 목표를 입력하여 저장하세요."
+            app:layout_constraintTop_toBottomOf="@+id/goal_input"
+
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/goalCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:hint="칼로리"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/goal_input2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/goalCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="탄수화물"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/goalCalories"
+            app:layout_constraintStart_toStartOf="@+id/goalCalories"
+            app:layout_constraintTop_toBottomOf="@+id/goalCalories" />
+
+        <EditText
+            android:id="@+id/goalProteins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="단백질"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/goalCalories"
+            app:layout_constraintStart_toStartOf="@+id/goalCalories"
+            app:layout_constraintTop_toBottomOf="@+id/goalCarbs" />
+        <EditText
+            android:id="@+id/goalFats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="지방"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/goalCarbs"
+            app:layout_constraintStart_toStartOf="@+id/goalCarbs"
+            app:layout_constraintTop_toBottomOf="@+id/goalProteins" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/Savegoal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="저장하기"/>
+</LinearLayout>
